@@ -1,0 +1,67 @@
+:root{
+    --colorTitre:#178d9c;
+    --colorTextMarge :white; 
+    --colorBackGround : #8BA1BB;
+}
+html{
+    height: 100%;
+}
+body{
+    background-color: var(--colorBackGround);
+    font-family: Arial, Helvetica, sans-serif;   
+}
+div.contenu{
+    max-width: 800px;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 8px 20px 8px;
+    box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.2 );
+}
+div.description{
+    overflow:auto;
+    background:url(margeGauche.jpg)no-repeat;
+    background-size: 24% 100%;
+
+}
+h1{
+    padding-top: 20px;
+    color: var(--colorTitre);
+    max-width: 60%;
+    font-style: italic;
+}
+h3{
+    font-size: 24px;
+}
+p, ul{
+    font-size: 12px;
+}
+div.marge{
+    min-height: 100%;
+    float: left;
+    padding-left: 2%;
+    padding-right: 2%;
+    max-width: 20%;
+
+}
+div.cover{
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 70%;
+    background:url(cover.jpg)no-repeat;
+    background-size: 100% 100%;
+    
+}
+div.detail{
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 70%;
+
+}

@@ -2,6 +2,7 @@
     --colorTitre:#178d9c;
     --colorTextMarge :white; 
     --colorBackGround : #8BA1BB;
+    --colorTitre2 : #0e5b65;
 }
 html{
     height: 100%;
@@ -9,6 +10,7 @@ html{
 body{
     background-color: var(--colorBackGround);
     font-family: Arial, Helvetica, sans-serif;   
+    display: inline;
 }
 div.contenu{
     max-width: 800px;
@@ -16,34 +18,22 @@ div.contenu{
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 8px 20px 8px;
+    padding: 0px 0px 20px 0px;
     box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.2 );
 }
 div.description{
     overflow:auto;
+    /*à remplacer ici par un linea gradient*/
     background:url(margeGauche.jpg)no-repeat;
-    background-size: 24% 100%;
-
+    background-size: 30% 70%;
 }
-h1{
-    padding-top: 20px;
-    color: var(--colorTitre);
-    max-width: 60%;
-    font-style: italic;
-}
-h3{
-    font-size: 24px;
-}
-p, ul{
-    font-size: 12px;
-}
-div.marge{
-    min-height: 100%;
+div.marge
+{
     float: left;
     padding-left: 2%;
     padding-right: 2%;
-    max-width: 20%;
-
+    max-width: 26%;
+    color:  var(--colorTextMarge);    
 }
 div.cover{
     float: right;
@@ -51,17 +41,53 @@ div.cover{
     padding-bottom: 20px;
     padding-left: 3%;
     padding-right: 3%;
-    width: 70%;
+    width: 64%;
     background:url(cover.jpg)no-repeat;
-    background-size: 100% 100%;
-    
+    background-size: 100% 100%;      
 }
-div.detail{
-    float: right;
-    padding-top: 20px;
+div.experience{
+    float: left;
+    padding-top: 0px;
     padding-bottom: 20px;
-    padding-left: 3%;
+    margin-left: 0px;
     padding-right: 3%;
-    width: 70%;
-
+    width: 63%;
 }
+h1{
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-left: 0px;
+    color: var(--colorTitre);
+    max-width: 100%;
+    font-style: italic;
+}
+
+h3{
+    font-size: 24px;
+}
+
+h4{
+    background-color: #1a595f;
+    background-size: 100%;
+    color:white;
+    padding: 8px;
+}
+h4.titre1
+{
+    width: 60%;
+}
+p
+{
+    color:var(--colorTextMarge);
+}
+
+p, ul{
+    font-size: 14px;
+}
+
+p.titre2
+{
+    padding-left: 2%;
+    color: var(--colorTitre2);
+}
+
